@@ -1,4 +1,0 @@
-Hello world
-how are you today
-I am a coding file
-that does nothing
