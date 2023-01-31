@@ -33,8 +33,9 @@ print(fruit) # Banana -> doesn't change the original!
 # ---- HOWEVER -> Lists are !! MUTABLE !! ----
 # We CAN change the contents of a list directly and not make a copy!
 b = [1, 2, 3, 4, 5]
+print(f"Our list before reassignment: {b}")
 b[3] = 1000
-print(b) # [1, 2, 3, 1000, 5]
+print(f"AFTER reassignment: {b}") # [1, 2, 3, 1000, 5]
 
 
 # ---- range() function! ----
