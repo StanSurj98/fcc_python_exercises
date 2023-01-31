@@ -4,6 +4,8 @@
 # Also print() adds a '\n' to the end of it, so usually we will print each line as a double space
 # So let's say we want to print out all the contents of a file, but without double spacing it
 
+# String Literals f"Hello {code here} World"!
+
 fhand = open('sample_text_2.txt')
 for line in fhand:
   line = line.rstrip() # Get's rid of the '\n' at the end and prevents double space
@@ -17,7 +19,7 @@ fname = input('Enter Filename to Open: ')
 try:
   fhand = open(fname)
 except:
-  print('Sorry the filename: "', fname, '" does not exist')
+  print(f"Sorry the file name {fname} doesn't exist!")
   quit() # !! VERY IMPORTANT !! to quit here, otherwise code below this keeps going and tracebacks
 
 for line in fhand:
@@ -33,7 +35,7 @@ f2name = input('Enter Filename to Open: ')
 try:
   f2hand = open(f2name)
 except:
-  print('Sorry the filename: "', fname, '" does not exist')
+  print(f"Sorry the file name {f2name} doesn't exist!")
   quit() # !! VERY IMPORTANT !! to quit here, otherwise code below this keeps going and tracebacks
 
 
