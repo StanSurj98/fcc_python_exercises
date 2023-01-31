@@ -7,8 +7,9 @@
 str = 'hello\nworld'
 # this prints hello
 #             world
+print(str)
 abc = 'a\nb\nc'
-print(len(abc)) # You'd think it's 3, but it's 5. \n counts as a char length and has index
+print("Length of abc including special chars:", len(abc)) # You'd think it's 3, but it's 5. \n counts as a char length and has index
 print(abc[1]) # just prints the newline on the screen
 
 # Why is this important?
